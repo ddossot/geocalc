@@ -13,14 +13,16 @@
 package com.grum.geocalc;
 
 /**
- * Represents coordinates given in
- * Degrees decimal-minutes (D m) format
- *
+ * Represents coordinates given in Degrees decimal-minutes (D m) format
+ * 
  * @author rgallet
  */
-public class GPSCoordinate extends DMSCoordinate {
+public class GPSCoordinate extends DMSCoordinate
+{
+    private static final long serialVersionUID = 1L;
 
-    public GPSCoordinate(double wholeDegrees, double minutes) {
+    public GPSCoordinate(final double wholeDegrees, final double minutes)
+    {
         super(wholeDegrees, minutes, 0);
     }
 }

@@ -13,21 +13,24 @@
 package com.grum.geocalc;
 
 /**
- * Represents coordinates given in
- * radian-degrees (r) format
- *
+ * Represents coordinates given in radian-degrees (r) format
+ * 
  * @author rgallet
  */
-public class RadianCoordinate extends Coordinate {
+public class RadianCoordinate extends Coordinate
+{
+    private static final long serialVersionUID = 1L;
 
-    double radians;
+    private final double radians;
 
-    public RadianCoordinate(double radians) {
+    public RadianCoordinate(final double radians)
+    {
         this.decimalDegrees = Math.toDegrees(radians);
         this.radians = radians;
     }
 
-    public double getRadians() {
+    public double getRadians()
+    {
         return radians;
     }
 }

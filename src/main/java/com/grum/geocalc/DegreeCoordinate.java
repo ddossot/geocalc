@@ -13,14 +13,16 @@
 package com.grum.geocalc;
 
 /**
- * Represents coordinates given in
- * decimal-degrees (d) format
- *
+ * Represents coordinates given in decimal-degrees (d) format
+ * 
  * @author rgallet
  */
-public class DegreeCoordinate extends Coordinate {
+public class DegreeCoordinate extends Coordinate
+{
+    private static final long serialVersionUID = 1L;
 
-    public DegreeCoordinate(double decimalDegrees) {
+    public DegreeCoordinate(final double decimalDegrees)
+    {
         this.decimalDegrees = decimalDegrees;
     }
 }
